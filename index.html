@@ -6,6 +6,43 @@
 <script type="text/javascript" src="dist/js/bootstrap.js"></script>>
 <link rel="stylesheet" href="dist/css/bootstrap.css">
 
+
+<link rel="stylesheet" href="style.css">
+    <script>
+    $(document).ready(function(){
+
+
+        $("#nav li.first").click(function(){
+          $(this).siblings().toggle(300);
+        });
+
+        $("#nav li").click(function(){
+            
+            $(this).children('ul').children('li').css('display','block');
+            $(this).children('ul').stop(false, true).toggle(300);
+
+          
+
+        });
+
+
+        $("#nav li").hover(function(){
+
+          if(window.innerWidth > 902){
+          $(this).children('ul').stop(false, true).fadeIn(300);
+            }
+        },function(){ 
+          if(window.innerWidth > 902){
+          $(this).children('ul').stop(false, true).fadeOut(300);
+          }
+        });
+
+
+    });
+  </script>
+
+
+
 </head>
 <body>
 
@@ -18,20 +55,55 @@
     Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.
     The negative margin is why the examples below are outdented. It's so that content within grid columns is lined 
 
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar" role="navigation">
   
-			    <div class="container">
-   					<ul class="nav navbar-nav">
+			   
+         <ul id="nav">
+    <li class="first" ><a><span class="glyphicon glyphicon-align-justify">Меню</span></a></li>
+    <li><a href="#">На головну</a></li>
+    <li><a href="#">Абітурієнту</a>
+    <ul>
+        <li><a href="">навчальний процес</a></li>
+        <li><a href="">підготовче відділення</a></li>
+        <li><a href="">конференції</a></li>
+        <li><a href="">Element4</a></li>
+        <li><a href="">Element5</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Олімпіада "ПМАМС"</a>
+    <ul>
+        <li><a href="">Офіційний лист олімпіади</a></li>
+        <li><a href="">Список Учасників</a></li>
+        <li><a href="">Анкета учасників</a></li>
+        <li><a href="">Попередні результати олімпіади</a></li>
+        
+    </ul>
 
-   					 <li class="active"><a href="#">home</a></li>
-    				<li><a href="#">Ссылка</a></li>
-    				 <li><a href="#">menu</a> </li>
-					</ul>
-123
+    </li>
+    
+    <li><a href="#">Наукова Діяльність</a>
+      <ul>
+        <li><a href="">Історія кафедри</a></li>
+        <li><a href="">Викладачі кафедри</a></li>
+        <li><a href="">Наукові досягнення</a></li>
 
-  				</div>
+      </ul>
+    </li>
+    <li><a href="#">Контактна інформація</a></li>
+    
+  </ul> 
 
-	</nav>
+
+
+
+
+
+
+
+
+
+
+	 </nav>
 
 	</div>
 
