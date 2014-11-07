@@ -124,6 +124,13 @@ position: relative;
 
 
 
+#up{
+	display: none;
+
+}
+#down{
+	display: none;
+}
 
 
 
