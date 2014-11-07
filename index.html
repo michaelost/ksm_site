@@ -3,15 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-<script type="text/javascript" src="dist/js/bootstrap.js"></script>>
+
+
+	
+
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
 <link rel="stylesheet" href="dist/css/bootstrap.css">
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
   </script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ResponsiveSlides.js-master/responsiveslides.css">
     <script>
     $(document).ready(function(){
 
+ $(".rslides").responsiveSlides();
+    	
 
         $("#nav li.first").click(function(){
           $(this).siblings().toggle(300);
@@ -46,17 +53,15 @@
 
 </head>
 <body>
+	
+	<div class="container">
 
-
+	
 	<div class="row" id="header">
-		fixed-width) or .container-fluid (full-width) for proper alignment and padding.
-    Use rows to create horizontal groups of columns.
-    Content should be placed within columns, and only columns may be immediate children of rows.
-    Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.
-    Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.
-    The negative margin is why the examples below are outdented. It's so that content within grid columns is lined 
+		
 
-    <nav class="navbar"  role="navigation">
+
+	  <nav class="navbar navbar-default"  role="navigation">
   
 			   
          <ul id="nav">
@@ -106,6 +111,17 @@
 
 	 </nav>
 
+		
+
+		
+	<ul class="rslides">
+  		<li><img src="1.jpg" alt=""></li>
+  	<li><img src="2.jpeg" alt=""></li>
+  	<li><img src="3.jpg" alt=""></li>
+		</ul>
+
+  
+
 	</div>
 
 	<div class="row" id="header" >
@@ -129,5 +145,11 @@
    
 
 	</div>
+
+
+</div>
+
+	<script type="text/javascript" src="ResponsiveSlides.js-master/responsiveslides.js"></script>
+
 </body>
 </html>
