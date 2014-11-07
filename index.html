@@ -46,6 +46,39 @@
         });
 
 
+
+
+        var distance = 100;
+		$("#down").on('click',function(){
+			distance+=600;
+  		$('html,body').animate({ scrollTop: distance + "px"},300);
+				
+		});
+
+		$("#down").on('dblclick',function(){
+  		$('html,body').animate({ scrollTop: 5000},300);
+				
+		});
+
+
+
+		$("#up").on('click',function(){
+			distance-=600;
+  		$('html,body').animate({ scrollTop: distance + "px"},300);
+				
+		});
+
+		$("#up").on('dblclick',function(){
+  		$('html,body').animate({ scrollTop: 10},300);
+				
+		});
+
+
+
+
+
+
+
     });
   </script>
 
@@ -125,22 +158,32 @@
 	</div>
 
 	<div class="row" id="header" >
-	<div class="container-fluid"> Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
-    Use rows to create horizontal groups of columns.
-    Content should be placed within columns, and only columns may be immediate children of rows.
-    Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.
-    Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.
-    The negative margin is why the examples below are outdented. It's so that content within grid columns is lined up with non-grid content.
-    Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.
-    If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
-    Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any .col-md- class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg- class is not present.</div>
+	<div class="container-fluid"> Кафедра комп'ютерних систем та мереж заснована у 1991 році. Кафедра входить до складу Інституту телекомунікаційних та комп'ютерних систем Хмельницького національного університету. З червня 2005 року кафедру очолює доктор технічних наук, професор, академік міжнародної академії інформатизації М'ясіщев О.А. На сьогоднішній день колектив кафедри стовідсотково складається з викладачів з науковими ступенями, які є висококваліфікованими спеціалістами в галузі проектування комп'ютерних мереж, цифрових обчислювальних пристроїв та систем, мережних інформаційних технологій, захисту інформації. Лабораторна база кафедри є провідною в університеті і включає в себе більше ста одиниць сучасного комп'ютерного та мережного устаткування.</div>
   
-    		
+  		<div class="container-fluid">
+
+  	   Комп’ютерна інженерія (Computer Engineering) – це напрям, який об’єднує в собі частини електротехніки, комп’ютерних наук та програмної інженерії необхідні для проектування та розроблення комп’ютерних систем. Спеціалісти у галузі комп’ютерної інженерії мають знання з електротехніки, технологій проектування програмних систем та програмно-апаратних комплексів, на відміну від інших комп’ютерних напрямів, які зосереджуються лише на одній галузі знань. Фахівці з комп’ютерної інженерії приймають участь у багатьох аспектах проектування апаратно-програмних систем, від проектування мікропроцесорів, персональних та супер комп’ютерів до проектування цифрових схем. Ця галузь інженерії зосереджена не лише на тому як функціонують комп’ютери самі по собі, але й включає усі аспекти інтеграції комп’ютерних систем у різні галузі, від технологічних процесів на виробництві, електростанціях та ін. до літальних космічних апаратів.
+    			</div>
+
+
+    	<div class="container-fluid">
+
+  	   Комп’ютерна інженерія (Computer Engineering) – це напрям, який об’єднує в собі частини електротехніки, комп’ютерних наук та програмної інженерії необхідні для проектування та розроблення комп’ютерних систем. Спеціалісти у галузі комп’ютерної інженерії мають знання з електротехніки, технологій проектування програмних систем та програмно-апаратних комплексів, на відміну від інших комп’ютерних напрямів, які зосереджуються лише на одній галузі знань. Фахівці з комп’ютерної інженерії приймають участь у багатьох аспектах проектування апаратно-програмних систем, від проектування мікропроцесорів, персональних та супер комп’ютерів до проектування цифрових схем. Ця галузь інженерії зосереджена не лише на тому як функціонують комп’ютери самі по собі, але й включає усі аспекти інтеграції комп’ютерних систем у різні галузі, від технологічних процесів на виробництві, електростанціях та ін. до літальних космічних апаратів.
+    			</div>	
+    			
+
+		
+
+
 
 	</div>
 
 	<div class="container-fluid">
-		
+		Спеціалісти з комп’ютерної інженерії залучаються до проектних та дослідних робіт у галузі робототехніки, оскільки ця галузь вимагає використання цифрових пристроїв для моніторингу та керування такими компонентами, як електродвигуни, сенсори, система комунікації.
+
+Підчас навчання на факультеті комп’ютерних систем та програмування, студенти мають можливість обирати спеціалізацію (комп’ютерні мережі, програмування, системне програмування та ін.) для більш глибокого вивчення відповідних дисциплін.
+
+Після завершення 4-х річної програми підготовки бакалавра за напрямом комп’ютерна інженерія, студентам факультету комп’ютерних систем та програмування пропонується продовжити навчання за спеціальностями:
 
    
 
@@ -150,6 +193,19 @@
 </div>
 
 	<script type="text/javascript" src="ResponsiveSlides.js-master/responsiveslides.js"></script>
+
+
+
+<div class="scroll_bar">
+	
+	<span class="glyphicon glyphicon-chevron-down" id="down"></span>
+</div>
+
+<div class="up">
+	<span class="glyphicon glyphicon-chevron-up" id="up"></span>
+	
+</div>
+
 
 </body>
 </html>
